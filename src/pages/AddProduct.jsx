@@ -28,7 +28,7 @@ const AddProduct = () => {
     console.log(token)
 
     try {
-      const response = await fetch(`http://localhost:3000/api/products`, {
+      const response = await fetch(`https://utn-backend-final-scxn.onrender.com/api/products`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

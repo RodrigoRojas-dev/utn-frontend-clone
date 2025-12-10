@@ -32,7 +32,7 @@ const Home = () => {
   const fetchingProducts = async (query = "") => {
     setResponseServer(initialErrorState)
     try {
-      const response = await fetch(`http://localhost:3000/api/products?${query}`, {
+      const response = await fetch(`https://utn-backend-final-scxn.onrender.com/api/products?${query}`, {
         method: "GET"
       })
       const dataProducts = await response.json()
@@ -67,7 +67,7 @@ const Home = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:3000/api/products/${idProduct}`, {
+      const response = await fetch(`https://utn-backend-final-scxn.onrender.com/api/products/${idProduct}`, {
         method: "DELETE",
         headers: {
           "Authorization": `Bearer ${token}`
